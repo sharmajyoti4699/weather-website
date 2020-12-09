@@ -1,5 +1,3 @@
-console.log(' client side java script code')
-
 const weatherform=document.querySelector('form')
 const searchinput=document.querySelector('input')
 const msgone=document.querySelector('#msg-1')
