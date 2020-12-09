@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Weather</title>
+        <link rel="icon" href="/img/p1 (2).jpg">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+
+    </head>
+    <body>
+        <div class="main-content">
+        
+        {{>header}}
+       <!--to directly inject the dynamic content without using partial files
+       <p>node course: {{name}}</p> -->
+       <form>
+           <input placeholder="Location">
+           <button>search</button>
+       </form>     
+         <p id="msg-1"></p>
+         <p id="msg-2"></p>
+        </div>
+        {{>footer}}
+        <script src="/javascripts/app.js"></script>
+    </body>
+</html>
