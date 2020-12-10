@@ -3,6 +3,8 @@ const request=require('request')
 const express=require('express')
 const hbs=require('hbs')
 const app=express()
+const port=process.env.PORT||3000
+
 const forecast=require('./utils/forecasts.js')
 const geocode = require('./utils/geocodes.js')
 //define path for express config
@@ -85,6 +87,6 @@ app.get('*',(req,res)=>{
         errorMsg:'Page not found!'
     })
 })
-app.listen(3000,()=>{
-    console.log("server start")
+app.listen(port,()=>{
+    console.log("server start at"+port)
 })
